@@ -25,8 +25,10 @@ let mailOptions = {
 transporter.sendMail(mailOptions, function(err, data) {
     //send the email
     if (err) {
+        //send the error message if there are any error
         console.log(err);
     } else {
+        //show email sent when there ae no error
         console.log('Email sent!');
     }
 });
